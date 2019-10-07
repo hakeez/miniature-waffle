@@ -3,10 +3,7 @@
   
   <head>   
     <title> Lotto Information</title>
-  </head>
-  
-  <body>
-    <script language="JavaScript">
+        <script language="JavaScript">
       var a = math.floor(mathRandom() *48) + 1))
       var b = math.floor(mathRandom() *48) + 1))
       var c = math.floor(mathRandom() *48) + 1))
@@ -14,9 +11,24 @@
       var e = math.floor(mathRandom() *48) + 1))
       var f = math.floor(mathRandom() *48) + 1))
       var winning [a, b, c, d, e, f]
+      
       winning.sort(function(a, b){return a - b});
     </script>
+  </head>
+  
+  <body>
+    <FORM>
+   
+      <h2> Enter Your Lotto Numbers </h2>
+      <INPUT NAME = "inp1" MAXLENGTH = "15" SIZE = "15">
+      <INPUT NAME = "inp2" MAXLENGTH = "15" SIZE = "15">
+      <INPUT NAME = "inp3" MAXLENGTH = "15" SIZE = "15">
+      <INPUT NAME = "inp4" MAXLENGTH = "15" SIZE = "15">
+      <INPUT NAME = "inp5" MAXLENGTH = "15" SIZE = "15">
+      <INPUT NAME = "inp6" MAXLENGTH = "15" SIZE = "15">
+  
 
+    </FORM>
   </body>  
 </html>
   
