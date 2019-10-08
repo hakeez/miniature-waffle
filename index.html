@@ -4,23 +4,27 @@
   <head>   
     <title> Lotto Information</title>
         <script language="JavaScript">
-      var a = math.floor(mathRandom() *48) + 1))
-      var b = math.floor(mathRandom() *48) + 1))
-      var c = math.floor(mathRandom() *48) + 1))
-      var d = math.floor(mathRandom() *48) + 1))
-      var e = math.floor(mathRandom() *48) + 1))
-      var f = math.floor(mathRandom() *48) + 1))
-      var arr [a, b, c, d, e, f]
+
+      var arr [inp1, inp2, inp3, inp4, inp5, inp6]
           
-      function form(inp1,inp2,inp3,inp4,inp5)
+      function form(num)
       {
-        var = cash
-        var num [inp1, inp2, inp3, inp4, inp5]
+        num.sort(function(a, b){return a - b});
+        var = cash = 0
+        var a = math.floor(mathRandom() *48) + 1))
+        var b = math.floor(mathRandom() *48) + 1))
+        var c = math.floor(mathRandom() *48) + 1))
+        var d = math.floor(mathRandom() *48) + 1))
+        var e = math.floor(mathRandom() *48) + 1))
+        var f = math.floor(mathRandom() *48) + 1))
+        var arr [a, b, c, d, e, f]
+        
+        
          
         return cash
       }
       
-      winning.sort(function(a, b){return a - b});
+      num.sort(function(a, b){return a - b});
     </script>
   </head>
   
@@ -33,10 +37,12 @@
       <INPUT NAME = "inp3" MAXLENGTH = "15" SIZE = "15">
       <INPUT NAME = "inp3" MAXLENGTH = "15" SIZE = "15">
       <INPUT NAME = "inp4" MAXLENGTH = "15" SIZE = "15">
-      !! Money Ball !!<INPUT NAME = "inp5" MAXLENGTH = "15" SIZE = "15">
+      <INPUT NAME = "inp4" MAXLENGTH = "15" SIZE = "15">  
+      !! Money Ball !!
+      <INPUT NAME = "inp6" MAXLENGTH = "15" SIZE = "15">
        
       <INPUT NAME="calc" VALUE="Calculate" TYPE=BUTTON 
-      onClick=temp(this.form)>  
+      onClick=form(num)>  
         
     </FORM>
   </body>  
